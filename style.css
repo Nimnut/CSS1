@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/chocstrbg.png);
+  background-repeat: repeat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+header {
+  height: 160px;
+  background-color: rgb(244, 194, 194);
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(255, 0, 170, 0.1);
+}
+
+Header h1 {
+  font-family: MS Gothic1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px;
+}
+
+header p {
+  font-family: MS Gothic1;
+  font-size: 1rem
+}
+
+nav {
+  background-color: rgb(248, 175, 166);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+}
+
+nav a {
+  font-family: MS Gothic1;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgb(250, 128, 114);
+}
+
+hr.fakeborder {
+  height: 0px;
+  width: 120%;
+  border: none;
+  border-bottom: dotted rgb(248, 175, 166);
+  border-width: 30px;
+  position: relative;
+  bottom: 15px;
+}
+
+hr.fakeborder2 {
+  height: 0px;
+  border: none;
+  width: 120%;
+  border-bottom: dotted rgb(248, 175, 166);
+  border-width: 30px;
+  position: relative;
+  left: 30px;
+  bottom: 45px;
+}
+
+div .headerdeco {
+  position: relative;
+  top: -60px;
+  left: -35px;
+  height: 20px;
+}
+
+div .headerdeco2 {
+  position: relative;
+  left: -35px;
+  height: 20px;
+  top: -60px;
+  transform: scaleY(-1);
+}
+
+.showmargin {
+  margin: 20px;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: fit-content;
+  margin: 20px auto;
+}
+
+main h2 {
+  font-family: MS Gothic1;
+  color: rgb(107, 0, 54);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+main p,
+pre,
+ol,
+ul {
+  font-family: MS Gothic2;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-wrap: wrap;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.2rem
+}
+
+ol p.q {
+  color: rgb(107, 0, 54);
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(244, 194, 194);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: rgb(250, 128, 114);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(240, 128, 128);
+}
+
+table {
+  width: auto;
+  margin-top: 20px;
+  border: 1px solid rgb(248, 175, 166);
+  border-radius: 10px;
+  border-collapse: separate;
+}
+
+th,
+td {
+  border: 1px solid rgb(248, 175, 166);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(248, 175, 166);
+  font-family: MS Gothic1;
+}
+
+td {
+  font-family: MS Gothic2;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(253, 237, 236);
+}
+
+tr:nth-child(odd) td {
+  background-color: transparent;
+}
+
+
+.centerparagraph {
+  text-align: center;
+  text-wrap: wrap;
+  padding: 30px 100px;
+}
+
+img.vocaloid {
+  margin: 20px 20px 5px 20px;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 2)
+}
+
+img.vocaloid:hover {
+  transform: translateY(-15px);
+}
+
+@font-face {
+  font-family: MS Gothic1;
+  src: url(fonts/MS-Gothic-01.ttf)
+}
+
+@font-face {
+  font-family: MS Gothic2;
+  src: url(fonts/MS-PGothic-03.ttf)
+}
+
+a:link:not(nav a) {
+  color: rgb(205, 80, 143);
+}
+
+a:link:hover:not(nav a) {
+  color: hotpink;
+}
+
+a:visited:not(nav a) {
+  color: rgb(125, 14, 75);
+}
+
+a:visited:hover:not(nav a) {
+  color: rgb(220, 18, 119);
+}
+
+a:active:not(nav a) {
+  color: lightpink;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(250, 128, 114);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(250, 128, 114) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  font-family: MS Gothic1;
+  font-weight: bold;
+  visibility: visible;
+  opacity: 60%;
+}
